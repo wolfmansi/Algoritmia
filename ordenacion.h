@@ -92,3 +92,25 @@ void shell(int L[],int n){
         salto=salto/2;
     }
 }
+
+int main(void)
+{
+	sumar_referencia(&numero); /* enviamos numero a la función */
+    
+    printf("\nELIGE LA FUNCIÓN QUE DESEAS HACER");
+    printf("\n1) Ordenamiento x BURBUJA");
+	printf("\n2) Ordenamiento x SELECCION");
+	printf("\n3) Ordenamiento x INSERCCION");
+	printf("\n4) Ordenamiento x DIVIDE");
+	printf("\n5) Ordenamiento x QUICKSORT");
+	printf("\n6) Ordenamiento x SHELL");
+	printf("\n\n   Elige el timpo de ordenamiento: ", numero);
+	
+	printf("\nValor de numero dentro de main() es: %d ", numero);
+	/* podemos notar que el valor de numero se modifica
+	 * y que ahora dentro de main() también se ha modificado
+	 * aunque la función no haya retornado ningún valor.
+	 */
+ 
+	return 0;
+}
